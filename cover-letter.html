@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargavi Rengarajan - Forward Deployed Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .presentation-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .slide {
+            padding: 60px;
+            min-height: 600px;
+            display: none;
+            animation: slideIn 0.5s ease-in-out;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .slide h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .slide h2 {
+            font-size: 2em;
+            color: #34495e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .slide h3 {
+            font-size: 1.4em;
+            color: #2980b9;
+            margin: 20px 0 10px 0;
+        }
+        
+        .slide p, .slide li {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 15px;
+        }
+        
+        .slide ul {
+            margin-left: 30px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .tech-item {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 100;
+        }
+        
+        .nav-btn {
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .nav-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .slide-counter {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: #34495e;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .impact-stat {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+        
+        .company-match {
+            background: #f8f9fa;
+            border-left: 5px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .intro-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .intro-slide h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .intro-slide .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">6</span>
+        </div>
+        
+        <!-- Slide 1: Title -->
+        <div class="slide active intro-slide">
+            <h1>Bhargavi Rengarajan</h1>
+            <p class="subtitle">Forward Deployed Engineer Application</p>
+            <h2 style="color: white; border-bottom: 3px solid white;">Bridging AI Innovation with Customer Success</h2>
+        </div>
+        <!-- Slide 2: About Me & Contact -->
+        <div class="slide">
+            <h2>About Me & Contact</h2>
+            <p>Hello, I’m <span class="highlight">Bhargavi Rengarajan</span>, a versatile engineer who thrives at the intersection of 
+            <strong>customer engineering</strong> and <strong>technical development</strong>. 
+            With experience spanning full-stack systems, AI/ML applications, and developer tooling, 
+            I love building impactful solutions that empower both teams and customers.</p>
+
+            <h3>Contact</h3>
+            <ul>
+                <li><strong>Email:</strong> breng002@ucr.edu</li>
+                <li><strong>Phone:</strong> +1 (951)-334-6504</li>
+                <li><strong>GitHub:</strong> github.com/bhargavirengarajan21</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/in/bhargavi-r21</li>
+            </ul>
+        </div>
+
+        <!-- Slide 2: Perfect Technical Match -->
+        <div class="slide">
+            <h2>Perfect Technical Stack Alignment</h2>
+            
+            <div class="company-match">
+                <h3>What HappyRobot Needs → What I Bring</h3>
+            </div>
+            
+            <div class="tech-stack">
+                <div class="tech-item">React + TypeScript<br><small>✓ 5+ years experience</small></div>
+                <div class="tech-item">Node.js<br><small>✓ Full-stack projects</small></div>
+                <div class="tech-item">Python<br><small>✓ AI/ML applications</small></div>
+                <div class="tech-item">API Integration<br><small>✓ Third-party systems</small></div>
+            </div>
+            
+            <h3>AI/ML Experience</h3>
+            <ul>
+                <li><span class="highlight">AI Git Commit Tool</span> - Node.js package with Dockerized Ollama</li>
+                <a href=""></a>
+                <li><span class="highlight">Real-time Chat with Gemini</span> - Full-stack portfolio integration</li>
+                <a href=""></a>
+                <li><span class="highlight">ML Projects</span> - Music player using hand gestures, Air Pollution Prediction using XGboost, Published a IEEE paper<a href=""></a></li>
+            </ul>
+        </div>
+        
+        <!-- Slide 3: Customer Engineering DNA -->
+        <div class="slide">
+            <h2>Customer Engineering DNA</h2>
+            
+            <h3>Proven Track Record in Technical Guidance</h3>
+            <ul>
+                <li><span class="highlight">Mentored 3+ junior developers</span> through technical onboarding</li>
+                <li><span class="highlight">POC between US/India teams</span> - aligning requirements across time zones</li>
+                <li><span class="highlight">Conducted KT sessions</span> for non-technical stakeholders like Product Mangers and Business Team</li>
+            </ul>
+            
+            <div class="company-match">
+                <h3>This Role = Mentoring at Scale</h3>
+                <p>Just like I helped developers understand complex systems and become productive, I'll help your customers unlock the full potential of HappyRobot's AI workers.</p>
+            </div>
+            
+            <h3>Communication Skills in Action</h3>
+            <ul>
+                <li>I have Worked as a Teaching Assistance for Chemistry Laboratory @UCR <span class="impact-stat">Handling 100+ students</span></li>
+                <li>Streamlined rollouts across global teams @Mr. Cooper</li>
+                <li> POC between US/India teams<span class="impact-stat">Connecting two teams</span></li>
+            </ul>
+        </div>
+        
+        <!-- Slide 4: High-Impact Delivery -->
+        <div class="slide">
+            <h2>High-Impact Delivery Record</h2>
+            
+            <h3>Performance & Optimization Focus</h3>
+            <ul>
+                <li>Reduced API calls by <span class="impact-stat">10K+ → 1 cached request</span></li>
+                <li>Cut bundle sizes by <span class="impact-stat">45%</span> with TypeScript library</li>
+                <li>Eliminated UI freezes for <span class="impact-stat">200+ daily users</span></li>
+                <li>Enhanced load times by <span class="impact-stat">40%</span> via Next.js migration</li>
+            </ul>
+            
+            <div class="company-match">
+                <h3>Perfect for MVP Development</h3>
+                <p>Your role requires building "new features or entire MVPs" - @Mr. Cooper is built with MVP feature, which lead to build any projects with that as foundation</p>
+            </div>
+            
+            <h3>Automation & Efficiency</h3>
+            <ul>
+                <li>Automated banner creation: <span class="impact-stat">90% less manual work</span></li>
+                <li>Reduced debugging time by <span class="impact-stat">60%</span> with distributed logging</li>
+                <li>Cut commit message time by <span class="impact-stat">40%</span> with AI tool</li>
+            </ul>
+        </div>
+        
+        <!-- Slide 5: Cultural Alignment -->
+        <div class="slide">
+            <h2>Cultural DNA Match</h2>
+            
+            <h3>Extreme Ownership</h3>
+            <ul>
+                <li>Took ownership of <span class="highlight">US-India team coordination</span> without being asked</li>
+                <li>Proactively built monitoring dashboards to prevent customer issues</li>
+                <li>Published open-source tools to solve team-wide problems</li>
+            </ul>
+            
+            <h3>Craftsmanship</h3>
+            <ul>
+                <li>Reduced customer defects by <span class="impact-stat">30%</span> through comprehensive testing</li>
+                <li>Built reusable components that <span class="highlight">standardized UI across applications</span></li>
+                <li>Achieved <span class="impact-stat">$350K cost savings</span> through accessibility compliance</li>
+            </ul>
+            
+            <div class="company-match">
+                <h3>Urgency with Focus</h3>
+                <p>I delivered a complete distributed logging platform in 3 months and reduced build times by 90% in a 2-week sprint.</p>
+            </div>
+            
+            <h3>First-Principles Thinking</h3>
+            <ul>
+                <li>Rebuilt async handling from scratch to eliminate UI freezes</li>
+                <li>Created novel AI-powered workflow automation solutions</li>
+            </ul>
+        </div>
+        
+        <!-- Slide 6: Why This Role -->
+        <div class="slide">
+            <h2>💡 Why Forward Deployed Engineer?</h2>
+            
+            <h3>Perfect Intersection of My Strengths</h3>
+            <div class="company-match">
+                <p><strong>Technical Depth + Customer Success + AI Innovation</strong></p>
+                <p>This role combines everything I love: solving complex technical challenges, helping others succeed, and building with cutting-edge AI technology.</p>
+            </div>
+            
+            <h3>What I'll Bring Day 1</h3>
+            <ul>
+                <li><span class="highlight">Technical credibility</span> with your AI platform</li>
+                <li><span class="highlight">Customer onboarding expertise</span> from mentoring experience</li>
+                <li><span class="highlight">Full-stack capability</span> for rapid MVP development</li>
+                <li><span class="highlight">Cross-functional communication</span> skills</li>
+            </ul>
+            
+            <h3>Long-term Vision</h3>
+            <ul>
+                <li>Build customer success playbooks and best practices</li>
+                <li>Contribute to product roadmap based on customer feedback</li>
+                <li>Help scale the forward deployed engineering function</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 40px; font-size: 1.3em; color: #2980b9;">
+                <strong>Ready to be part of HappyRobot customers automate communication and unlock AI value! 🤖</strong>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <button class="nav-btn" onclick="prevSlide()" id="prevBtn">← Previous</button>
+        <button class="nav-btn" onclick="nextSlide()" id="nextBtn">Next →</button>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total-slides').textContent = totalSlides;
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = n;
+            
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+        
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                showSlide(currentSlide + 1);
+            }
+        }
+        
+        function prevSlide() {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+        
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>
