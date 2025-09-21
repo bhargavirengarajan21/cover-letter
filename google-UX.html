@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargavi Rengarajan - Google UX Engineer Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #4285f4, #34a853, #fbbc05, #ea4335);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        
+        .analysis-section, .cover-letter-section {
+            padding: 40px;
+        }
+        
+        .analysis-section {
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+        }
+        
+        .section-title {
+            color: #4285f4;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, #4285f4, #34a853);
+            border-radius: 2px;
+        }
+        
+        .match-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #34a853;
+        }
+        
+        .match-strong {
+            border-left-color: #34a853;
+        }
+        
+        .match-partial {
+            border-left-color: #fbbc05;
+        }
+        
+        .match-missing {
+            border-left-color: #ea4335;
+        }
+        
+        .match-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .match-desc {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .cover-letter {
+            line-height: 1.8;
+        }
+        
+        .cover-letter p {
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4285f4;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .analysis-section {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>Google UX Engineer Application</h1>
+                <p>Resume Analysis & Cover Letter for Bhargavi Rengarajan</p>
+            </div>
+        </div>
+        
+        <div class="content-grid">
+            <div class="analysis-section">
+                <h2 class="section-title">📊 Keyword Match Analysis</h2>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">90%</div>
+                        <div class="stat-label">Overall Match</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10/10</div>
+                        <div class="stat-label">Core Skills</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8/8</div>
+                        <div class="stat-label">Requirements</div>
+                    </div>
+                </div>
+                
+                <div class="match-item match-strong">
+                    <div class="match-title">✅ Strong Matches</div>
+                    <div class="match-desc">
+                        • <strong>Front-end Development:</strong> 5+ years React.js, TypeScript, Next.js<br>
+                        • <strong>Application Development:</strong> Web platform expertise<br>
+                        • <strong>Prototyping:</strong> Built reusable component systems & templates<br>
+                        • <strong>Software Development:</strong> Full-stack experience with CI/CD<br>
+                        • <strong>System Thinking:</strong> Created reusable frameworks across applications
+                    </div>
+                </div>
+                
+                <div class="match-item match-strong">
+                    <div class="match-title">✅ Additional Strong Matches</div>
+                    <div class="match-desc">
+                        • <strong>AI/ML Systems Prototyping:</strong> AI Git Commit Tool - open source Node.js tool with Ollama integration<br>
+                        • <strong>Technical UX Design:</strong> Created user-aligned React forms with Figma validation<br>
+                        • <strong>Developer Tools Experience:</strong> Built internal component libraries and CI/CD pipelines<br>
+                        • <strong>Performance Optimization:</strong> Reduced bundle sizes by 45%, load times from 2.4s to 1.2s<br>
+                        • <strong>Cross-functional Collaboration:</strong> Mentored engineers, worked across teams on complex projects
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cover-letter-section">
+                <h2 class="section-title">✉️ Cover Letter</h2>
+                
+                <div class="cover-letter">
+                    <div class="contact-info">
+                        <strong>Bhargavi Rengarajan</strong><br>
+                        Chicago, IL | +1 951-334-6504<br>
+                        bhargavirengarajan210199@gmail.com<br>
+                        linkedin.com/in/bhargavi-r21/
+                    </div>
+                    
+                    <p><strong>Dear Google UX Engineering Team,</strong></p>
+                    
+                    <p>I am excited to apply for the UX Engineer position on the Developer UX team. With over <span class="highlight">5 years of front-end development experience</span> and a passion for creating intuitive developer tools, I am eager to contribute to Google's mission of making first-party product development fast and easy.</p>
+                    
+                    <p>Your job posting resonates deeply with my career trajectory. At Mr. Cooper, I've spent years <span class="highlight">bridging the gap between design and engineering</span> by architecting reusable Next.js TypeScript templates that reduced build times by 90% and improved Lighthouse scores from 60 to 90+. This work directly aligns with Google's goal of delivering an industry-leading, AI-enhanced development experience.</p>
+                    
+                    <p>My experience creating <span class="highlight">scalable component systems and frameworks</span> demonstrates the system thinking you're seeking. I developed a configuration-driven React library that reduced build time by 70% and standardized UI across applications—exactly the kind of reusable patterns and frameworks that span entire ecosystems. Additionally, my work on CI/CD pipelines using GitHub Actions, Jenkins, and Docker shows my understanding of the complete software development process.</p>
+                    
+                    <p>What excites me most about this role is the opportunity to work with <span class="highlight">AI/ML technologies</span>. My recent open-source AI Git Commit Tool, which leverages Ollama for on-device processing, demonstrates my ability to prototype AI-native development workflows. The tool has gained 381 downloads in its first week, showing my ability to create products that resonate with developers.</p>
+                    
+                    <p>I'm particularly drawn to the Core team's mandate to impact important technical decisions across Google. My experience <span class="highlight">optimizing application performance</span>—reducing bundle sizes by 45% and page load times from 2.4s to 1.2s—has taught me how small technical improvements can have massive downstream impacts on user experience and developer productivity.</p>
+                    
+                    <p>Your emphasis on creating "excellent, safe, and coherent experiences" aligns with my work ensuring ADA compliance across 100+ pages and reducing customer-reported defects by 30% through comprehensive testing. I understand that great UX engineering isn't just about building features—it's about creating foundations that enable entire teams to succeed.</p>
+                    
+                    <p>I would love to discuss how my technical expertise, system thinking, and passion for developer experience can contribute to Google's vision of transforming how software is built. Thank you for considering my application.</p>
+                    
+                    <p><strong>Best regards,<br>Bhargavi Rengarajan</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
